@@ -1,1 +1,416 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicolas Van Goethem</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#fafafa;
+    --text:#222;
+    --accent:#0f4c81;
+    --border:#e5e5e5;
+    --muted:#666;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg:#121212;
+        --text:#e8e8e8;
+        --accent:#79a8d8;
+        --border:#333;
+        --muted:#aaa;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Inter",sans-serif;
+    line-height:1.7;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(250,250,250,.95);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+    z-index:100;
+}
+
+@media (prefers-color-scheme: dark){
+    nav{
+        background:rgba(18,18,18,.95);
+    }
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.logo{
+    font-weight:600;
+    font-size:1rem;
+}
+
+.nav-links{
+    display:flex;
+    gap:1.5rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-size:.95rem;
+}
+
+.hero{
+    padding:7rem 0 5rem;
+}
+
+.hero h1{
+    font-family:"Crimson Text",serif;
+    font-size:4rem;
+    font-weight:600;
+    line-height:1;
+    margin-bottom:1rem;
+}
+
+.hero .subtitle{
+    font-size:1.2rem;
+    color:var(--muted);
+    margin-bottom:2rem;
+}
+
+.hero .keywords{
+    color:var(--accent);
+    font-weight:500;
+}
+
+section{
+    padding:4rem 0;
+    border-top:1px solid var(--border);
+}
+
+h2{
+    font-family:"Crimson Text",serif;
+    font-size:2.2rem;
+    margin-bottom:1.5rem;
+}
+
+p{
+    margin-bottom:1rem;
+}
+
+ul{
+    padding-left:1.5rem;
+}
+
+li{
+    margin-bottom:.6rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2rem;
+}
+
+.card{
+    border:1px solid var(--border);
+    padding:1.5rem;
+    border-radius:12px;
+}
+
+.card h3{
+    margin-bottom:.8rem;
+}
+
+.pub{
+    margin-bottom:1.2rem;
+}
+
+.pub strong{
+    display:block;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:3rem 0;
+    color:var(--muted);
+    border-top:1px solid var(--border);
+}
+
+.cv-button{
+    display:inline-block;
+    margin-top:1rem;
+    padding:.8rem 1.2rem;
+    border-radius:8px;
+    text-decoration:none;
+    background:var(--accent);
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding:5rem 0 3rem;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .nav-links{
+        gap:.8rem;
+        font-size:.9rem;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-inner">
+<div class="logo">Nicolas Van Goethem</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#teaching">Teaching</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero container">
+
+<h1>Nicolas Van Goethem</h1>
+
+<p class="subtitle">
+Professor Auxiliar<br>
+Department of Mathematics<br>
+Faculty of Sciences, University of Lisbon
+</p>
+
+<p class="keywords">
+Mathematical Modelling • Fracture • Dislocations • Variational Analysis • PDEs
+</p>
+
+<a class="cv-button" href="assets/CV.pdf" target="_blank">
+Download CV
+</a>
+
+</header>
+
+<section id="about">
+<div class="container">
+
+<h2>About</h2>
+
+<p>
+I am Professor Auxiliar at the Department of Mathematics of the Faculty of Sciences,
+University of Lisbon, and a researcher at CMAFcIO.
+</p>
+
+<p>
+My research lies at the interface between applied mathematics,
+continuum mechanics, and materials science. I work on the mathematical
+modelling of solids with defects, including fracture, damage,
+dislocations, elasticity and plasticity, using variational methods,
+partial differential equations, geometric measure theory and
+differential geometry.
+</p>
+
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+
+<h2>Research Interests</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Continuum Mechanics</h3>
+<p>
+Mathematical modelling of solids, elasticity, plasticity and
+thermodynamics.
+</p>
+</div>
+
+<div class="card">
+<h3>Fracture & Damage</h3>
+<p>
+Variational approaches to fracture mechanics and damage evolution.
+</p>
+</div>
+
+<div class="card">
+<h3>Dislocation Theory</h3>
+<p>
+Geometric and analytical models of crystalline defects.
+</p>
+</div>
+
+<div class="card">
+<h3>Optimization</h3>
+<p>
+Shape optimization, topology optimization and Γ-convergence.
+</p>
+</div>
+
+<div class="card">
+<h3>PDEs</h3>
+<p>
+Elliptic and parabolic equations, functional analysis and applications.
+</p>
+</div>
+
+<div class="card">
+<h3>Differential Geometry</h3>
+<p>
+Geometry of defective crystals and non-Riemannian structures.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="publications">
+<div class="container">
+
+<h2>Selected Publications</h2>
+
+<div class="pub">
+<strong>Analytic and geometric properties of dislocation singularities</strong>
+R. Scala, N. Van Goethem<br>
+Proceedings of the Royal Society of Edinburgh
+</div>
+
+<div class="pub">
+<strong>A variational approach to single crystals with dislocations</strong>
+R. Scala, N. Van Goethem<br>
+SIAM Journal on Mathematical Analysis
+</div>
+
+<div class="pub">
+<strong>Variational evolution of dislocations in single crystals</strong>
+R. Scala, N. Van Goethem<br>
+Journal of Nonlinear Science
+</div>
+
+<div class="pub">
+<strong>Damage-driven fracture with low-order potentials</strong>
+M. Caroccia, N. Van Goethem<br>
+ESAIM: M2AN
+</div>
+
+<div class="pub">
+<strong>Hydro-mechanical fracture modelling governed by topological derivatives</strong>
+M. Xavier, N. Van Goethem, A. Novotny<br>
+Computer Methods in Applied Mechanics and Engineering
+</div>
+
+<p style="margin-top:2rem;">
+For a complete publication list, see my CV or online profiles.
+</p>
+
+</div>
+</section>
+
+<section id="teaching">
+<div class="container">
+
+<h2>Teaching</h2>
+
+<ul>
+<li>Differential Geometry</li>
+<li>Rational Mechanics</li>
+<li>Mathematical Methods in Physics</li>
+<li>Computational Methods in Geology</li>
+</ul>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+
+<h2>Contact</h2>
+
+<p>
+Department of Mathematics<br>
+Faculty of Sciences, University of Lisbon<br>
+Campo Grande, Edifício C6<br>
+1749-016 Lisboa, Portugal
+</p>
+
+<p>
+Email:
+<a href="mailto:vangoeth@fc.ul.pt">
+vangoeth@fc.ul.pt
+</a>
+</p>
+
+<p>
+ORCID:
+<a href="https://orcid.org/0000-0002-5356-8383">
+0000-0002-5356-8383
+</a>
+</p>
+
+<p>
+<a href="#">Google Scholar</a> |
+<a href="#">Scopus</a> |
+<a href="#">ResearchGate</a>
+</p>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+© 2026 Nicolas Van Goethem
+</div>
+</footer>
+
+</body>
+</html>
+```
 
