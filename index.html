@@ -43,6 +43,35 @@ body{
     font-family:"Inter",sans-serif;
     line-height:1.7;
 }
+    .about-layout{
+    display:flex;
+    gap:3rem;
+    align-items:flex-start;
+}
+
+.portrait{
+    flex:0 0 260px;
+}
+
+.portrait img{
+    width:100%;
+    display:block;
+    border-radius:2px;
+}
+
+.about-text{
+    flex:1;
+}
+
+@media(max-width:768px){
+    .about-layout{
+        flex-direction:column;
+    }
+
+    .portrait{
+        width:220px;
+    }
+}
 
 .container{
     width:min(1100px,90%);
@@ -100,14 +129,18 @@ nav{
 }
 
 .hero .subtitle{
-    font-size:1.2rem;
-    color:var(--muted);
-    margin-bottom:2rem;
+    color:#555;
+    max-width:650px;
 }
 
 .hero .keywords{
     color:var(--accent);
     font-weight:500;
+}
+    .pub{
+    margin-bottom:1.8rem;
+    padding-left:1rem;
+    border-left:2px solid #ddd;
 }
 
 section{
@@ -140,9 +173,14 @@ li{
 }
 
 .card{
-    border:1px solid var(--border);
-    padding:1.5rem;
-    border-radius:12px;
+    border:none;
+    padding:0;
+}
+
+.card h3{
+    font-family:"Crimson Text",serif;
+    font-size:1.4rem;
+    font-weight:600;
 }
 
 .card h3{
@@ -180,13 +218,10 @@ footer{
 }
 
 .cv-button{
-    display:inline-block;
-    margin-top:1rem;
-    padding:.8rem 1.2rem;
-    border-radius:8px;
-    text-decoration:none;
-    background:var(--accent);
-    color:white;
+    background:none;
+    color:var(--accent);
+    border:1px solid var(--accent);
+    border-radius:0;
 }
 
 @media(max-width:768px){
@@ -195,7 +230,7 @@ footer{
         padding:5rem 0 3rem;
     }
 
-    .hero h1{
+    {
         font-size:2.8rem;
     }
 
@@ -227,6 +262,10 @@ footer{
 
 <header class="hero container">
 
+<div class="hero-photo">
+<img src="assets/nicolas.jpg" alt="Nicolas Van Goethem">
+</div>
+
 <h1>Nicolas Van Goethem</h1>
 
 <p class="subtitle">
@@ -253,7 +292,7 @@ Download CV
 <div class="about-layout">
 
 <div class="portrait">
-<img src="assets/nicolas.jpg" alt="Nicolas Van Goethem">
+<img src="nicolas.jpg" alt="Nicolas Van Goethem">
 </div>
 
 <div class="about-text">
