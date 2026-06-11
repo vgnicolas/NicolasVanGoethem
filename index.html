@@ -16,6 +16,54 @@
             --border: #e5e5e5;
             --muted: #666;
         }
+        /* Card Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Title */
+.card h3 {
+    font-family: "Crimson Text", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: var(--accent);
+}
+
+/* Card Paragraph */
+.card p {
+    margin-bottom: 0;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Link Styling */
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a:hover h3 {
+    text-decoration: underline;
+}
 
         @media (prefers-color-scheme: dark) {
             :root {
@@ -334,52 +382,70 @@ https://www.researchgate.net/profile/Nicolas-Van-Goethem
     <div class="container">
         <h2>Research Interests</h2>
         <div class="grid">
-            <!-- Continuum Mechanics Card -->
+            <!-- Card 1: Continuum Mechanics -->
             <div class="card">
                 <a href="continuummechanics_detailed.html" style="text-decoration: none;">
                     <h3>Continuum Mechanics</h3>
                 </a>
-                <p>Elasticity, elasto-plasticity, constitutive modelling and thermodynamics.</p>
+                <p>
+                    Elasticity, elasto-plasticity, constitutive modeling, and thermodynamics.
+                    Focus on incompatibility-governed models for defects in solids.
+                </p>
             </div>
 
-            <!-- Dislocation Theory Card -->
+            <!-- Card 2: Defects & Dislocations -->
             <div class="card">
                 <a href="#" style="text-decoration: none;">
-                    <h3>Dislocation Theory</h3>
+                    <h3>Defects & Dislocation Theory</h3>
                 </a>
-                <p>Geometric and analytical descriptions of defects in crystalline solids.</p>
+                <p>
+                    Geometric and analytical descriptions of defects in crystalline solids.
+                    Variational evolution of dislocations, Cartesian currents, and topological singularities.
+                </p>
             </div>
 
-            <!-- Fracture & Damage Card -->
+            <!-- Card 3: Fracture & Damage Mechanics -->
             <div class="card">
                 <a href="#" style="text-decoration: none;">
-                    <h3>Fracture & Damage</h3>
+                    <h3>Fracture & Damage Mechanics</h3>
                 </a>
-                <p>Variational and computational approaches to crack initiation and propagation.</p>
+                <p>
+                    Variational and computational approaches to crack initiation and propagation.
+                    Topological derivatives, shape optimization, and hydro-mechanical fracture modeling.
+                </p>
             </div>
 
-            <!-- Calculus of Variations Card -->
+            <!-- Card 4: Calculus of Variations -->
             <div class="card">
                 <a href="#" style="text-decoration: none;">
                     <h3>Calculus of Variations</h3>
                 </a>
-                <p>Γ-convergence, relaxation, homogenization and free-discontinuity problems.</p>
+                <p>
+                    Γ-convergence, relaxation, homogenization, and free-discontinuity problems.
+                    Functional properties of BD<sub>dev</sub>(Ω) and deviatoric strain fields.
+                </p>
             </div>
 
-            <!-- Topological Sensitivity Card -->
-            <div class="card">
-                <a href="#" style="text-decoration: none;">
-                    <h3>Topological Sensitivity</h3>
-                </a>
-                <p>Shape and topology optimization applied to fracture and damage mechanics.</p>
-            </div>
-
-            <!-- Geometric Analysis & PDEs Card -->
+            <!-- Card 5: Geometric Analysis & PDEs -->
             <div class="card">
                 <a href="#" style="text-decoration: none;">
                     <h3>Geometric Analysis & PDEs</h3>
                 </a>
-                <p>Bounded deformation, incompatibility operators, geometric measure theory and nonlinear PDEs.</p>
+                <p>
+                    Bounded deformation, incompatibility operators, and geometric measure theory.
+                    Nonlinear PDEs and their applications to defect modeling.
+                </p>
+            </div>
+
+            <!-- Card 6: Thermodynamics & Objectivity -->
+            <div class="card">
+                <a href="#" style="text-decoration: none;">
+                    <h3>Thermodynamics & Objectivity</h3>
+                </a>
+                <p>
+                    Thermodynamic forces in defect modeling.
+                    Fundamental aspects of objectivity in continuum mechanics.
+                </p>
             </div>
         </div>
     </div>
