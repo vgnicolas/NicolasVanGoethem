@@ -270,12 +270,17 @@ https://www.researchgate.net/profile/Nicolas-Van-Goethem
             text-decoration: underline;
         }
 
-        /* Publications */
-        .pub {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 2px solid var(--border);
-        }
+        /* lications */
+.pub {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid var(--accent); /* Blue separator line */
+    padding-top: 1rem; /* Add padding to separate the line from the content */
+}
+
+.pub:first-child {
+    border-top: none; /* Remove the top border for the first publication */
+}
 
         .pub strong {
             display: block;
