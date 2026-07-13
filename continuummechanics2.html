@@ -68,6 +68,29 @@
     padding-top: 1rem; /* Add padding to separate the line from the content */
      line-height: 1.15;
 }
+    .publication-group {
+  margin-top: 2.2rem;
+}
+
+.publication-group h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+}
     
     .back-button:hover { text-decoration: underline; }
     .related-cards {
@@ -91,7 +114,7 @@
   </style>
 </head>
 <body>
-  <h1>Continuum Mechanics: Elasticity, Elasto-Plasticity, Dislocations, Crystal Growth and Thermodynamics</h1>
+  <h1>Continuum Mechanics of Defective Solids</h1>
    </p>
  My research aims to develop a mathematically rigorous theory of defect-driven continuum mechanics, where incompatibility, dislocations, fracture and damage are treated as fundamental mechanisms governing the mechanical response of solids. Combining variational methods, 
   continuum mechanics and partial differential equations, I seek to bridge microscopic defect physics with macroscopic constitutive theories for elasticity, plasticity and fracture.
@@ -118,21 +141,13 @@
 
   <h2>Incompatibility and Elasticity</h2>
   <p>
-    In <strong>elasticity</strong>, my work revisits classical theories, such as Kröner's formula for strain incompatibility, to address the challenges posed by defects in single crystals. 
-    The paper <em>Strain incompatibility in single crystals: Kröner's formula revisited</em> offers a perspective on how incompatibility can be incorporated 
-    into elasticity models, bridging microscopic defect structures and macroscopic material behavior.<br>
-    Following the pioneer work of Philippe Ciarlet on intrinsic elasticity, some contributions were proposed, making the link with dislocations through and the Frank tensor whose curl is precisely 
-    the incompatibility operator, that is related
-    to the dislocation density precisely  by Kröner's formula. Intrinsic elasticity means that the main kinematical variable is the elasticv strain instead of the displacement field, being the latter 
-    obtained as a by-product.
-    This approach was also at the basis of the "distributional approach to dislocations" (see the paper <em>A distributional approach to 2D Volterra dislocations at the continuum scale</em>), 
-   and justified the need to understand better the Beltrami decomposition (see the papers <em>A compatible-incompatible decomposition of symmetric tensors in L<sup>p</sup> with application to elasticity</em> and 
-       <em>Existence and asymptotic results for an intrinsic model of incompatible small-strain elasticity</em>).
-         <br>
-    My first works on the incompatibility were written for my PhD thesis in collaboration with F. Dupret (completed in 2006, but published only in 2012).
-    <br>
-The incompatibility is the linearization of Riemann curvature tensor, and the dislocations are related to the torsion, therefore these concepts are related to non-Riemannian differential geometry, 
-    a topic I have discussed in several papers as well (see <em>The non-Riemannian dislocated crystal: a tribute to Ekkehart Kröner</em>).
+In <strong>elasticity</strong>, my research investigates how the presence of crystalline defects modifies the classical theory of elasticity. Building on Kröner's theory of strain incompatibility, I have developed intrinsic formulations in which the elastic strain, rather than the displacement field, becomes the primary kinematical variable. This provides a natural framework for describing solids containing dislocations and other lattice defects.
+
+Following the pioneering work of Philippe Ciarlet on intrinsic elasticity, I established several mathematical links between incompatibility, the Frank tensor and the continuum description of dislocations. These ideas led to new analytical results on the incompatibility operator and the Beltrami decomposition, including a compatible–incompatible decomposition of symmetric tensor fields and existence results for intrinsic models of incompatible elasticity. Together, these contributions provide a rigorous mathematical foundation for incompatibility-based elasticity.
+
+More fundamentally, incompatibility is the linearization of the Riemann curvature tensor, while dislocations are associated with torsion. Their interaction therefore naturally belongs to the framework of non-Riemannian differential geometry, a subject explored in several of my works, including The Non-Riemannian Dislocated Crystal: A Tribute to Ekkehart Kröner. The origins of this line of research date back to my PhD work, although several of the resulting publications appeared only later.
+
+ Current research combines mathematical analysis with the numerical approximation of higher-order incompatibility-based models. Particular emphasis is placed on the development of finite element discretizations derived from differential complexes, specifically designed to preserve the structure of the incompatibility operator. These structure-preserving methods provide a natural framework for the numerical treatment of higher-order elasticity and gradient elasto-plasticity, while ensuring consistency with the underlying geometric formulation. Beyond establishing rigorous analytical results, the objective is to assess the predictive capabilities of these models through benchmark problems involving dislocations, size effects, strain localization and gradient elasto-plasticity.
 
      <h2>Functional spaces in Elasticity and Elastoplasticity</h2>
   <p>
@@ -150,6 +165,159 @@ The incompatibility is the linearization of Riemann curvature tensor, and the di
 
    
 </p>
+
+  <h2>Selected Publications</h2>
+
+<section class="publication-group">
+  <h3>Current Work</h3>
+
+  <div class="pub">
+    <strong>
+      Incompatibility-governed deformations:
+      towards a new model of small-strain elastoplasticity
+    </strong>
+    S. Amstutz, T.-N. Lê, N. Van Goethem<br>
+    <em>Manuscript, 2026</em><br>
+    <span class="status">Submitted</span>
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Recent Papers</h3>
+
+  <div class="pub">
+    <strong>Rigidity and Functional Properties of BD<sub>dev</sub>(Ω)</strong>
+    M. Caroccia, N. Van Goethem<br>
+    <em>Arch. Rational Mech. Anal.</em>, 2026
+  </div>
+
+  <div class="pub">
+    <strong>A second-order model of small-strain incompatible elasticity</strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Math. Mech. Solids</em>, 2024
+  </div>
+
+  <div class="pub">
+    <strong>Is Objectivity Really an Objective Concept?</strong>
+    N. Van Goethem<br>
+    <em>Ann. Appl. Math.</em>, 2022
+  </div>
+
+  <div class="pub">
+    <strong>On integral representation of local energy functionals on BD</strong>
+    M. Caroccia, M. Focardi, N. Van Goethem<br>
+    <em>SIAM J. Math. Anal.</em>, 2020
+  </div>
+
+  <div class="pub">
+    <strong>
+      Existence and asymptotic results for an intrinsic model
+      of incompatible small-strain elasticity
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Discrete Contin. Dyn. Syst. B</em>, 2020
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Foundational Papers on Incompatibility</h3>
+
+  <div class="pub">
+    <strong>
+      The incompatibility operator: from Riemann's intrinsic view
+      of geometry to a new model of elasto-plasticity
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Topics in Applied Analysis and Optimization</em>,
+    CIM Series in Mathematical Sciences, Springer, 2019
+  </div>
+
+  <div class="pub">
+    <strong>
+      Incompatibility-governed elasto-plasticity
+      for continua with dislocations
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Proc. R. Soc. A</em>, 2017
+  </div>
+
+  <div class="pub">
+    <strong>
+      Analysis of the incompatibility operator and application
+      in intrinsic elasticity with dislocations
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>SIAM J. Math. Anal.</em>, 2016
+  </div>
+
+  <div class="pub">
+    <strong>
+      A compatible-incompatible decomposition of symmetric tensors
+      in L<sup>p</sup> with application to elasticity
+    </strong>
+    G. Maggiani, R. Scala, N. Van Goethem<br>
+    <em>Math. Methods Appl. Sci.</em>, 2015
+  </div>
+
+  <div class="pub">
+    <strong>
+      Strain incompatibility in single crystals:
+      Kröner's formula revisited
+    </strong>
+    N. Van Goethem<br>
+    <em>J. Elast.</em>, 2011
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Earlier Contributions</h3>
+
+  <div class="pub">
+    <strong>Thermodynamical forces in single crystals with dislocations</strong>
+    N. Van Goethem<br>
+    <em>Z. Angew. Math. Phys.</em>, 2014
+  </div>
+
+  <div class="pub">
+    <strong>Cauchy elasticity with dislocations in the small-strain assumption</strong>
+    N. Van Goethem<br>
+    <em>Appl. Math. Lett.</em>, 2015
+  </div>
+
+  <div class="pub">
+    <strong>A distributional approach to 2D Volterra dislocations at the continuum scale</strong>
+    F. Dupret, N. Van Goethem<br>
+    <em>European J. Appl. Math.</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>
+      A multiscale model for dislocations:
+      from mesoscopic elasticity to macroscopic plasticity
+    </strong>
+    N. Van Goethem<br>
+    <em>Z. Angew. Math. Mech.</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>
+      The non-Riemannian dislocated crystal:
+      a tribute to Ekkehart Kröner
+    </strong>
+    N. Van Goethem<br>
+    <em>J. Geom. Mech.</em>, 2010
+  </div>
+
+  <div class="pub">
+    <strong>
+      Dynamic Prediction of Point Defects in Czochralski Silicon Growth:
+      An Attempt to Reconcile Experimental Defect Diffusion Coefficients
+      with the V/G Criterion
+    </strong>
+    N. Van Goethem, A. de Potter, N. Van den Bogaert, F. Dupret<br>
+    <em>J. Phys. Chem. Solids</em>, 2008
+  </div>
+</section>
 
   <h2>Some related Publications</h2>
 
