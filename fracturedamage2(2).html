@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fracture & Damage Mechanics - Detailed Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: blue;
+      --border: #e5e5e5;
+      --muted: #666;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e8e8e8;
+        --accent: #79a8d8;
+        --border: #333;
+        --muted: #aaa;
+      }
+    }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--text);
+      background: var(--bg);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: "Crimson Text", serif;
+    }
+
+    h1 {
+      margin: 1.5rem 0 1rem;
+      color: var(--text);
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    p { margin: 0 0 1.2rem; }
+
+    .publication-group { margin-top: 2.2rem; }
+
+    .publication-group h3 {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .pub {
+      margin-bottom: 1.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--accent);
+      line-height: 1.3;
+    }
+
+    .pub strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 1.05em;
+    }
+
+    .pub em {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 0.4rem;
+      padding: 0.15rem 0.5rem;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .related-cards {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .related-cards h3 {
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    .related-cards a, .back-button {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .related-cards a {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .related-cards a:hover, .back-button:hover { text-decoration: underline; }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fracture & Damage Mechanics</h1>
+
+  <p>
+    My work in <strong>fracture and damage mechanics</strong> focuses on variational and computational approaches to model crack initiation and propagation in brittle materials. This includes the use of <strong>shape optimization</strong> and <strong>topological derivatives</strong> to predict material failure.
+  </p>
+
+  <p>
+    A significant part of this research was developed during my postdoctoral work at École Polytechnique in collaboration with G. Allaire and F. Jouve, and published in the paper 
+    <em>Damage and crack evolution by shape optimization methods</em>. 
+    The methodology was later extended to <strong>hydro-mechanical fracture modeling</strong>, in collaboration with A. Novotny (LNCC, Brazil). Here, our approach was to consider and use only the topological derivative to predict
+    crack initiation and propagation (see the papers <em>Crack Nucleation Sensitivity Analysis</em>, conceived after but published before JCP paper). Our work on hydraulic fracture was published in <em> Hydro-mechanical fracture modelling governed by topological derivatives</em>
+  </p>
+
+  <p>
+    In parallel, I have collaborated with engineers, such as P. Areias (Instituto Superior Tecnico, Lisbon), on computational approaches to fracture and damage, which are more applied and engineering-focused.
+  </p>
+
+  <h2>Selected Publications</h2>
+
+  <section class="publication-group">
+    <h3>Fracture and Damage Mechanics</h3>
+
+  <div class="pub">
+    <strong>Brittle fracture on plates governed by topological derivatives</strong><br>
+    M. Xavier, N. Van Goethem<br>
+    <em>Eng. Comput.</em>, 39(1), 421-437, 2021
+</div>
+
+  
+
+
+  <div class="pub">
+    <strong>Hydro-mechanical fracture modelling governed by topological derivatives</strong><br>
+    M. Xavier, N. Van Goethem, A. Novotny<br>
+    <em>Comp. Meth. Appl. Mech. Eng. (CMAME)</em>, 2019
+  </div>
+  
+    <div class="pub">
+    <strong>A simplified model of fracking based on the topological derivative concept</strong><br>
+    M. Xavier, N. Van Goethem, A. Novotny<br>
+    <em> Int. J. Sol. Struct., </em>, 2018
+  </div>
+  
+<div class="pub">
+    <strong>Topological Derivative-Based Fracture Modelling in Brittle Materials: A Phenomenological Approach</strong><br>
+    M. Xavier, N. Van Goethem, A. Novotny, J.-M. Faria, E. Fancello<br>
+    <em>Eng. Fract. Mech.</em>, 2017
+</div>
+
+
+  <div class="pub">
+    <strong>Damage-based fracture with electromagnetic coupling</strong><br>
+    H.G. Silva, P. Areias, N. Van Goethem, M. Bezzeghoud<br>
+    <em>Comput. Mech.</em>, 2013
+  </div>
+
+  <div class="pub">
+    <strong>A finite-strain temperature-dependent ductile fracture model with configurational forces</strong><br>
+    P. Areias, N. Van Goethem<br>
+    <em>Int. J. Fract.</em>, 2013
+  </div>
+
+  <div class="pub">
+    <strong>A damage model for ductile crack initiation and propagation</strong><br>
+    P. Areias, N. Van Goethem, E. B. Pires<br>
+    <em>Comput. Mech.</em>, 2011
+  </div>
+  
+  <div class="pub">
+    <strong>Damage and crack evolution by shape optimization methods</strong><br>
+    G. Allaire, F. Jouve, N. Van Goethem<br>
+    <em>J. Comput. Phys. (JCP)</em>, 2011
+</div>
+
+  
+  <div class="pub">
+    <strong>Crack Nucleation Sensitivity Analysis</strong><br>
+    N. Van Goethem, A.A. Novotny<br>
+    <em>Math. Meth. Appl. Sci.</em>, 2010
+  </div>
+  </section>
+
+  <div class="related-cards">
+    <h3>Related Research Areas</h3>
+    <p>Explore other research themes connected to fracture and damage mechanics:</p>
+    <a href="continuummechanics2.html">→ Continuum Mechanics</a>
+    <a href="disloctheory2.html">→ Defects & Dislocation Theory</a>
+    <a href="calcvar2.html">→ Calculus of Variations & PDEs</a>
+  </div>
+
+  <a href="javascript:history.back()" class="back-button">← Back to Research Overview</a>
+</body>
+</html>
