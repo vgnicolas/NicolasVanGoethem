@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fracture and Damage Mechanics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: blue;
+      --border: #e5e5e5;
+      --muted: #666;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e8e8e8;
+        --accent: #79a8d8;
+        --border: #333;
+        --muted: #aaa;
+      }
+    }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--text);
+      background: var(--bg);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: "Crimson Text", serif;
+    }
+
+    h1 {
+      margin: 1.5rem 0 1rem;
+      color: var(--text);
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    p {
+      margin: 0 0 1.2rem;
+    }
+
+    .publication-group {
+      margin-top: 2.2rem;
+    }
+
+    .publication-group h3 {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .pub {
+      margin-bottom: 1.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--accent);
+      line-height: 1.3;
+    }
+
+    .pub strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 1.05em;
+    }
+
+    .pub em {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 0.4rem;
+      padding: 0.15rem 0.5rem;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .related-cards {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .related-cards h3 {
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    .related-cards a,
+    .back-button {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .related-cards a {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .related-cards a:hover,
+    .back-button:hover {
+      text-decoration: underline;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fracture and Damage Mechanics</h1>
+
+  <p>
+    My research in <strong>fracture and damage mechanics</strong> develops variational and
+    computational methods for describing crack initiation, propagation and material
+    degradation. The central objective is to formulate models in which the geometry of a
+    crack is not prescribed in advance, but emerges from an energy principle, a sensitivity
+    analysis or an evolving damage field.
+  </p>
+
+  <p>
+    This work lies at the interface of the calculus of variations, shape and topology
+    optimization, continuum mechanics and numerical analysis. A recurring theme is the use
+    of geometric perturbations to detect where a defect should nucleate and how it should
+    evolve, thereby connecting mathematical analysis with computational procedures for
+    brittle fracture, ductile damage and coupled multi-physics problems.
+  </p>
+
+  <h2>Shape Optimization and Crack Evolution</h2>
+
+  <p>
+    An important part of this research originated during my postdoctoral work at École
+    Polytechnique in collaboration with <strong>G. Allaire</strong> and
+    <strong>F. Jouve</strong>. We developed a shape-optimization approach in which the crack
+    is treated as an evolving geometric object and its propagation is driven by variations
+    of the mechanical energy.
+  </p>
+
+  <p>
+    In contrast with methods based on a prescribed crack path, this formulation allows the
+    geometry of the damaged region to adapt to the stress field. Shape derivatives identify
+    energetically favourable boundary motions, while remeshing and numerical optimization
+    are used to update the crack configuration. The resulting framework provides a direct
+    connection between fracture mechanics and the mathematical theory of optimal shapes.
+  </p>
+
+  <p>
+    The paper <em>Damage and crack evolution by shape optimization methods</em> established
+    this methodology for brittle materials. It also initiated a broader programme in which
+    crack evolution is interpreted as a free-boundary problem governed by variational and
+    geometric criteria.
+  </p>
+
+  <h2>Topological Derivatives and Crack Nucleation</h2>
+
+  <p>
+    Shape derivatives describe the motion of an existing boundary, but crack initiation
+    requires a mechanism capable of creating a new defect inside an initially sound body.
+    The <strong>topological derivative</strong> provides such a mechanism: it measures the
+    leading-order variation of an objective functional produced by inserting an
+    infinitesimal cavity, inclusion or crack at a given point.
+  </p>
+
+  <p>
+    In collaboration with <strong>A. A. Novotny</strong>, I developed a crack-nucleation
+    sensitivity analysis based on this concept. The method produces a spatial indicator of
+    the locations and orientations at which the creation of a crack is energetically most
+    favourable. It therefore offers a mathematically systematic alternative to empirical
+    crack-initiation criteria.
+  </p>
+
+  <p>
+    This idea was subsequently extended into computational models in which the same
+    topological information drives both nucleation and propagation. In collaboration with
+    <strong>M. Xavier</strong> and other colleagues, we applied this approach to brittle
+    fracture in bulk solids and plates, obtaining models that remain geometrically flexible
+    while avoiding the need to prescribe the crack path beforehand.
+  </p>
+
+  <h2>Hydro-Mechanical Fracture</h2>
+
+  <p>
+    A further direction concerns <strong>hydraulic fracture</strong>, where crack evolution
+    is coupled with the pressure and transport of a fluid inside the fractured medium. The
+    interaction between elasticity, fluid pressure and changing geometry creates a
+    particularly demanding free-boundary problem.
+  </p>
+
+  <p>
+    Our topological-derivative formulation incorporates this coupling directly into the
+    fracture indicator. The crack is generated and extended according to the energetic
+    effect of introducing new fractured regions under the combined action of mechanical
+    loading and fluid pressure. This led first to a simplified model of fracking and then to
+    a more complete hydro-mechanical formulation.
+  </p>
+
+  <p>
+    These models illustrate how sensitivity analysis can be used not only as an optimization
+    tool, but also as an evolution law for complex physical systems. They provide a bridge
+    between rigorous asymptotic analysis and practical numerical simulations of propagating
+    fractures.
+  </p>
+
+  <h2>Damage, Ductile Fracture and Coupled Models</h2>
+
+  <p>
+    In parallel with brittle-fracture models, I have worked with
+    <strong>P. Areias</strong> and other engineering collaborators on continuum damage and
+    ductile-fracture formulations. In these models, material degradation is represented by
+    internal variables that progressively reduce stiffness or strength before a macroscopic
+    crack is formed.
+  </p>
+
+  <p>
+    This research includes finite-strain and temperature-dependent formulations,
+    configurational-force approaches, and numerical models for ductile crack initiation and
+    propagation. It complements the geometric viewpoint of shape optimization by describing
+    diffuse degradation and strongly nonlinear material behaviour.
+  </p>
+
+  <p>
+    I have also contributed to coupled models in which fracture interacts with additional
+    physical fields, including electromagnetic effects. Such problems require a consistent
+    treatment of the mechanical energy, the coupling terms and the evolution of damage,
+    while remaining suitable for finite-element implementation.
+  </p>
+
+  <h2>Variational Structure and Numerical Approximation</h2>
+
+  <p>
+    Across these different models, the main mathematical issue is the competition between
+    stored elastic energy, dissipation and the energetic cost of creating new surfaces or
+    damaged regions. The calculus of variations provides the natural framework for
+    formulating this competition and for analysing the stability of the resulting
+    evolutions.
+  </p>
+
+  <p>
+    Shape and topological sensitivities translate these variational principles into local
+    computational indicators. Their numerical approximation requires the solution of
+    elasticity or coupled multi-physics systems, together with reliable procedures for
+    updating geometries, regularizing singular fields and tracking evolving defects.
+  </p>
+
+  <p>
+    This programme therefore combines analytical derivation, asymptotic methods and finite
+    element computation. The objective is not only to predict fracture paths, but also to
+    understand which mathematical structures make such predictions robust and physically
+    meaningful.
+  </p>
+
+  <h2>Current Perspective</h2>
+
+  <p>
+    My current work places fracture and damage within a broader theory of defective solids,
+    alongside dislocations, incompatibility and plasticity. From this perspective, cracks
+    and distributed damage are different manifestations of the loss of compatibility and
+    regularity in a continuum body.
+  </p>
+
+  <p>
+    A long-term objective is to connect geometric crack models, diffuse damage and
+    higher-order continuum theories in a unified variational framework. This includes the
+    analysis of defect interaction, strain localization, multi-physics coupling and
+    structure-preserving numerical methods for materials containing several classes of
+    evolving singularities.
+  </p>
+
+  <h2>Selected Publications</h2>
+
+  <section class="publication-group">
+    <h3>Topological-Derivative Fracture Models</h3>
+
+    <div class="pub">
+      <strong>Brittle fracture on plates governed by topological derivatives</strong>
+      M. Xavier, N. Van Goethem<br>
+      <em>Engineering Computations</em>, 39(1), 421–437, 2021
+    </div>
+
+    <div class="pub">
+      <strong>Hydro-mechanical fracture modelling governed by topological derivatives</strong>
+      M. Xavier, N. Van Goethem, A. A. Novotny<br>
+      <em>Computer Methods in Applied Mechanics and Engineering</em>, 2019
+    </div>
+
+    <div class="pub">
+      <strong>A simplified model of fracking based on the topological derivative concept</strong>
+      M. Xavier, N. Van Goethem, A. A. Novotny<br>
+      <em>International Journal of Solids and Structures</em>, 2018
+    </div>
+
+    <div class="pub">
+      <strong>Topological derivative-based fracture modelling in brittle materials: a phenomenological approach</strong>
+      M. Xavier, N. Van Goethem, A. A. Novotny, J.-M. Faria, E. Fancello<br>
+      <em>Engineering Fracture Mechanics</em>, 2017
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Shape Optimization and Crack Nucleation</h3>
+
+    <div class="pub">
+      <strong>Damage and crack evolution by shape optimization methods</strong>
+      G. Allaire, F. Jouve, N. Van Goethem<br>
+      <em>Journal of Computational Physics</em>, 2011
+    </div>
+
+    <div class="pub">
+      <strong>Crack nucleation sensitivity analysis</strong>
+      N. Van Goethem, A. A. Novotny<br>
+      <em>Mathematical Methods in the Applied Sciences</em>, 2010
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Damage and Ductile Fracture</h3>
+
+    <div class="pub">
+      <strong>Damage-based fracture with electromagnetic coupling</strong>
+      H. G. Silva, P. Areias, N. Van Goethem, M. Bezzeghoud<br>
+      <em>Computational Mechanics</em>, 2013
+    </div>
+
+    <div class="pub">
+      <strong>A finite-strain temperature-dependent ductile fracture model with configurational forces</strong>
+      P. Areias, N. Van Goethem<br>
+      <em>International Journal of Fracture</em>, 2013
+    </div>
+
+    <div class="pub">
+      <strong>A damage model for ductile crack initiation and propagation</strong>
+      P. Areias, N. Van Goethem, E. B. Pires<br>
+      <em>Computational Mechanics</em>, 2011
+    </div>
+  </section>
+
+  <div class="related-cards">
+    <h3>Related Research Areas</h3>
+    <p>Explore other research themes connected to fracture and damage mechanics:</p>
+    <a href="continuummechanics2.html">→ Continuum Mechanics</a>
+    <a href="disloctheory2.html">→ Defects &amp; Dislocation Theory</a>
+    <a href="calcvar2.html">→ Calculus of Variations &amp; PDEs</a>
+  </div>
+
+  <a href="javascript:history.back()" class="back-button">← Back to Research Overview</a>
+</body>
+</html>
