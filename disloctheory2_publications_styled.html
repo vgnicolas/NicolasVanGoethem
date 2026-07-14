@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defects, Dislocations and Topological Singularities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #fafafa;
+  --text: #222;
+  --accent: #0f4c81;
+  --border: #e5e5e5;
+  --muted: #666;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #e8e8e8;
+    --accent: #79a8d8;
+    --border: #333;
+    --muted: #aaa;
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+h1, h2, h3 {
+  font-family: "Crimson Text", serif;
+  color: var(--text);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+p { margin-bottom: 1.2rem; }
+.pub {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--accent);
+  line-height: 1.15;
+}
+.pub strong {
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.pub em {
+  color: var(--muted);
+  font-style: italic;
+}
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.back-button:hover { text-decoration: underline; }
+.related-cards {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+  
+
+.publication-group {
+  margin-top: 2.2rem;
+}
+
+.publication-group h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.related-cards h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+.related-cards a {
+  color: var(--accent);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.related-cards a:hover { text-decoration: underline; }
+</style>
+
+</head>
+
+<body>
+
+<h1>Defects, Dislocations and Topological Singularities</h1>
+<p>
+This research programme has developed over nearly two decades, from my doctoral work on distributional models of dislocations to recent variational and geometric approaches to defect evolution and incompatibility-based continuum theories. It combines continuum mechanics, geometric measure theory, partial differential equations and the calculus of variations to develop mathematically rigorous descriptions of crystalline defects across multiple length scales.
+</p>
+
+<p>
+The programme was strongly influenced by the pioneering work of the theoretical physicists <strong>Ekkehart Kröner</strong> and <strong>Hagen Kleinert</strong>, whose geometric and field-theoretic formulations of crystal defects have profoundly shaped the modern continuum theory of dislocations. Throughout this work, dislocations are viewed not merely as perturbations of a smooth deformation, but as intrinsically singular objects carrying essential geometric and topological information.
+</p>
+
+<p>
+One of the starting points of this research dates back to my doctoral work, during which I developed a distributional description of two-dimensional Volterra dislocations.
+
+
+<h2>A Distributional Approach to Dislocations</h2>
+
+<p>
+One of the starting points of this research was the development of a distributional description of two-dimensional Volterra dislocations. Classical elasticity is formulated in terms of smooth displacement fields, but such fields cannot globally represent a crystal containing dislocations: the displacement may be multivalued, while the elastic strain remains meaningful away from the defect set.
+</p>
+
+<p>
+The distributional formulation avoids introducing artificial branch cuts and describes defects directly through singular measures and differential operators. The Burgers vector and the dislocation density appear as intrinsic distributional quantities, while compatibility conditions are replaced by equations involving curl and incompatibility.
+</p>
+
+<p>
+This approach provided a conceptual bridge between the geometry of isolated defects and continuum models with distributed dislocation densities. It also led naturally to later work on intrinsic elasticity, the incompatibility operator and incompatibility-based models of elasto-plasticity.
+</p>
+
+<h2>Currents, Dislocation Lines and Variational Evolution</h2>
+  <p>
+While two-dimensional models provide valuable insight into the geometry and mechanics of isolated defects, real crystalline dislocations are inherently three-dimensional objects. 
+    They form curved line defects that bend, interact and organize into complex networks, giving rise to mathematical challenges with no analogue in two dimensions. Modeling these phenomena requires a 
+    geometric framework capable of describing evolving singular structures while remaining compatible with variational methods.
+  </p>
+ 
+  <p>
+ Geometric measure theory provides the natural mathematical language for this purpose, allowing geometric, topological and variational properties to be treated within a unified framework. 
+    In this setting, dislocation lines are naturally represented by Cartesian currents, a geometric measure-theoretic framework for representing oriented curves in a weak, measure-valued setting while retaining orientation. This representation accommodates weak 
+    convergence and singular limits, making it particularly well suited to the variational analysis of evolving dislocation networks.
+</p>
+<p>
+In three dimensions, dislocations form oriented curves that may move, interact and generate networks. Their geometry is naturally represented by currents, which retain orientation, multiplicity and boundary information while allowing weak convergence and singular limits.
+</p>
+
+<p>
+This line of research originated from a seminal paper by <strong>Stefan Müller</strong> and <strong>Mariapia Palombaro</strong>, which proposed a variational formulation of dislocations based on 
+  currents. Motivated by this work, <strong>Riccardo Scala</strong> initiated a systematic investigation of the approach, which eventually became the subject of his PhD thesis at SISSA during our collaboration.
+</p>
+
+<p>
+Together, we developed a variational framework in which dislocation configurations are encoded by Cartesian currents, geometric measure-theoretic objects that extend oriented curves to weak, measure-valued settings while retaining their orientation, multiplicity and boundary. 
+  They provide a natural representation of dislocation lines and their Burgers vectors, making it possible to study the evolution of complex dislocation networks within a rigorous variational framework.
+</p>
+
+<p>
+This leads to quasistatic evolution models based on incremental minimization. At each stage, the crystal selects a new configuration by balancing stored elastic energy against the cost of moving the dislocations. The resulting framework establishes rigorous existence results while preserving the geometric structure and conservation laws associated with dislocation lines.
+</p>
+
+<p>
+Related work investigates the Peach–Koehler force, constraint reactions in dislocation networks, front migration, and phase-field-type dynamics for the dislocation strain. More broadly, this variational perspective demonstrates how geometric measure theory and continuum mechanics can be combined to describe the evolution of crystalline defects within a mathematically rigorous framework.
+
+<p>
+Related work investigates the Peach–Koehler force, constraint reactions in dislocation networks, front migration and phase-field-type dynamics for the dislocation strain.
+</p>
+
+<h2>Jacobians and Topological Singularities</h2>
+
+<p>
+A more recent direction concerns topological singularities in maps of bounded variation. Classical Jacobian determinants are well suited to smooth or Sobolev maps, but they do not directly capture the singular structure of discontinuous fields arising in defect theory.
+</p>
+
+<p>
+In collaboration with <strong>L. De Luca</strong> and <strong>R. Scala</strong>, I introduced a weak notion of Jacobian for <strong>BV maps</strong>. The construction combines distributional derivatives, currents and geometric measure theory to identify topological singularities even when the underlying map has jumps or other singular components.
+</p>
+
+<p>
+The resulting framework extends the distributional philosophy developed for dislocations: defects are encoded by intrinsic measures rather than by globally smooth fields. It provides a rigorous tool for studying vortices, defects in ordered media and singular structures whose topology survives weak convergence.
+</p>
+
+<h2>Geometry, Incompatibility and Defective Crystals</h2>
+
+<p>
+Dislocations have a natural interpretation in non-Riemannian geometry. At the continuum level, they are associated with torsion, while strain incompatibility is related to the linearized Riemann curvature tensor. A defective crystal therefore cannot, in general, be described by a globally compatible Euclidean reference configuration.
+</p>
+
+<p>
+My work explores this geometric viewpoint through intrinsic formulations of elasticity, the Frank tensor, Kröner's incompatibility formula and compatible–incompatible decompositions of tensor fields. These results clarify how defect densities generate incompatible elastic strains and how the geometry of the crystal is encoded in observable continuum fields.
+</p>
+
+<p>
+This line of research connects directly with my current work on higher-order incompatibility-based elasticity and elasto-plasticity, where incompatibility is promoted from a compatibility constraint to a constitutive state variable.
+</p>
+
+<h2>From Discrete Defects to Continuum Plasticity</h2>
+
+<p>
+A central long-term problem is the derivation of effective continuum theories from large systems of interacting dislocations. When the number of defects increases and their characteristic scale decreases, dislocation measures may develop oscillations, concentrations and complex network structures.
+</p>
+
+<p>
+The mathematical challenge is to identify the effective energy and dissipation produced by these clusters and to determine under which scaling regimes they lead to macroscopic plastic strain, hardening or strain-gradient effects. 
+  This requires combining compactness, relaxation, Γ-convergence and homogenization with the geometric constraints carried by the dislocation currents.
+</p>
+
+<p>
+  The theory of weak Jacobians and singular currents offers a natural route toward this objective by providing stable representations of topological charge under weak convergence.
+More generally, this research seeks to establish rigorous mathematical links between discrete defect mechanics, geometric measure theory and continuum theories of elasticity and plasticity, providing a unified variational framework across multiple length scales.
+
+<h2>Selected Publications</h2>
+
+<section class="publication-group">
+  <h3>Topological Singularities and Weak Jacobians</h3>
+
+  <div class="pub">
+    <strong>A new approach to topological singularities via a weak notion of Jacobian for functions of bounded variation</strong>
+    L. De Luca, R. Scala, N. Van Goethem<br>
+    <em>Indiana University Mathematics Journal</em>, 73(2), 723–779, 2024
+  </div>
+
+  <div class="pub">
+    <strong>Analytic and geometric properties of dislocation singularities</strong>
+    R. Scala, N. Van Goethem<br>
+    <em>Proceedings of the Royal Society of Edinburgh, Section A: Mathematics</em>, 2020
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Variational Models of Dislocation Networks</h3>
+
+  <div class="pub">
+    <strong>Variational evolution of dislocations in single crystals</strong>
+    R. Scala, N. Van Goethem<br>
+    <em>Journal of Nonlinear Science</em>, 2019
+  </div>
+
+  <div class="pub">
+    <strong>A variational approach to single crystals with dislocations</strong>
+    R. Scala, N. Van Goethem<br>
+    <em>SIAM Journal on Mathematical Analysis</em>, 2019
+  </div>
+
+  <div class="pub">
+    <strong>Currents and dislocations at the continuum scale</strong>
+    R. Scala, N. Van Goethem<br>
+    <em>Methods and Applications of Analysis</em>, 2016
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Continuum Models for Dislocation Dynamics</h3>
+
+  <div class="pub">
+    <strong>Front migration for the dislocation strain in single crystals</strong>
+    N. Van Goethem<br>
+    <em>Communications in Mathematical Sciences</em>, 2017
+  </div>
+
+  <div class="pub">
+    <strong>Constraint reaction and the Peach–Koehler force for dislocation networks</strong>
+    N. Van Goethem<br>
+    <em>Mathematics and Mechanics of Complex Systems</em>, 2016
+  </div>
+
+  <div class="pub">
+    <strong>Dislocation-induced linear-elastic strain dynamics by Cahn–Hilliard-type equations</strong>
+    N. Van Goethem<br>
+    <em>Mathematics and Mechanics of Complex Systems</em>, 2016
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Incompatibility and Intrinsic Elasticity</h3>
+
+  <div class="pub">
+    <strong>Incompatibility-governed singularities in linear elasticity with dislocations</strong>
+    N. Van Goethem<br>
+    <em>Mathematics and Mechanics of Solids</em>, 22(8), 2017
+  </div>
+
+  <div class="pub">
+    <strong>The Frank tensor as a boundary condition in intrinsic linearized elasticity</strong>
+    N. Van Goethem<br>
+    <em>Journal of Geometric Mechanics</em>, 2016
+  </div>
+
+  <div class="pub">
+    <strong>A compatible–incompatible decomposition of symmetric tensors in L<sup>p</sup> with application to elasticity</strong>
+    G. Maggiani, R. Scala, N. Van Goethem<br>
+    <em>Mathematical Methods in the Applied Sciences</em>, 2015
+  </div>
+
+  <div class="pub">
+    <strong>Cauchy elasticity with dislocations in the small-strain assumption</strong>
+    N. Van Goethem<br>
+    <em>Applied Mathematics Letters</em>, 2015
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Early Developments</h3>
+
+  <div class="pub">
+    <strong>A distributional approach to the geometry of 2D dislocations at the continuum scale</strong>
+    N. Van Goethem<br>
+    <em>Annali dell'Università di Ferrara</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>A distributional approach to 2D Volterra dislocations at the continuum scale</strong>
+    F. Dupret, N. Van Goethem<br>
+    <em>European Journal of Applied Mathematics</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>Strain incompatibility in single crystals: Kröner's formula revisited</strong>
+    N. Van Goethem<br>
+    <em>Journal of Elasticity</em>, 2011
+  </div>
+
+  <div class="pub">
+    <strong>The non-Riemannian dislocated crystal: a tribute to Ekkehart Kröner</strong>
+    N. Van Goethem<br>
+    <em>Journal of Geometric Mechanics</em>, 2010
+  </div>
+</section>
+
+<div class="related-cards">
+<h3>Related Research Areas</h3>
+<p>Explore other research themes connected to defects and dislocation theory:</p>
+<a href="continuummechanics2.html">→ Continuum Mechanics</a>
+<a href="fracturedamage2.html">→ Fracture &amp; Damage Mechanics</a>
+<a href="calcvar2.html">→ Calculus of Variations &amp; PDEs</a>
+</div>
+
+<a href="javascript:history.back()" class="back-button">← Back to Research Overview</a>
+
+</body>
+
+</html>
