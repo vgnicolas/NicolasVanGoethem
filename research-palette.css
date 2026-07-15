@@ -1,0 +1,20 @@
+/* Palette adjustment only.
+   This file does not change typography, spacing, widths, or layout. */
+
+:root {
+  --bg: #ffffff !important;
+  --text: #1d2634 !important;
+  --accent: #284f78 !important;
+  --border: #d8dde4 !important;
+  --muted: #65707f !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121820 !important;
+    --text: #e8edf3 !important;
+    --accent: #8eafd0 !important;
+    --border: #34404d !important;
+    --muted: #aab4c0 !important;
+  }
+}
