@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nicolas Van Goethem — mathematical modelling, analysis and computation of defects in solids.">
+  <title>Nicolas Van Goethem | Mathematical Modelling of Defects in Solids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_v2.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a href="#top" class="nav-name">N. Van Goethem</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#current">Current work</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Faculty of Sciences · University of Lisbon</p>
+        <h1>Nicolas<br>Van Goethem</h1>
+        <p class="hero-title">Mathematical Modelling of Defects in Solids</p>
+        <p class="role">Associate Professor with Habilitation<br>
+          <a href="https://ciencias.ulisboa.pt/sobre-nos/a-faculdade/departamentos/ciencias-matematicas">Department of Mathematical Sciences</a><br>
+          <a href="https://ciencias.ulisboa.pt/">Faculty of Sciences, University of Lisbon</a>, Portugal
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore research</a>
+          <a class="button" href="#publications">Selected works</a>
+          <a class="button" href="assets/CV.pdf">Download CV</a>
+        </div>
+        <p class="hero-keywords">Analysis <span>·</span> Mechanics <span>·</span> Geometry <span>·</span> Computation</p>
+      </div>
+      <div class="hero-portrait">
+        <img src="nicolas.jpg" alt="Portrait of Nicolas Van Goethem">
+        <div class="portrait-caption">Continuum mechanics · Calculus of variations · Defect theory</div>
+      </div>
+    </header>
+
+    <div class="fracture wrap" aria-hidden="true">
+      <svg viewBox="0 0 800 14" preserveAspectRatio="none"><path d="M0,7 L120,7 L140,2 L160,11 L180,7 L340,7 L360,3 L380,10 L400,7 L620,7 L640,2 L660,11 L680,7 L800,7"/></svg>
+    </div>
+
+    <section id="about" class="wrap section">
+      <div class="section-heading"><span>01</span><h2>About</h2></div>
+      <div class="intro-grid">
+        <p class="lead">I develop mathematical models for solids with defects, combining rigorous analysis with continuum mechanics and numerical approximation.</p>
+        <div class="intro-copy">
+          <p>I am an Associate Professor at the Department of Mathematical Sciences of the Faculty of Sciences, University of Lisbon, and a researcher at <a href="https://cemsul.ciencias.ulisboa.pt/">CEMSUL</a>.</p>
+          <p>My work lies at the interface of applied analysis, materials science and computation. It addresses elasticity, elasto-plasticity, fracture, damage and dislocation theory through variational methods, partial differential equations, geometric measure theory, differential geometry and topological sensitivity analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section band">
+      <div class="wrap">
+        <div class="section-heading"><span>02</span><h2>Research at a glance</h2></div>
+        <div class="research-grid">
+          <a class="research-card" href="continuummechanics2.html">
+            <span class="card-index">A</span>
+            <h3>Continuum Mechanics</h3>
+            <p>Elasticity, elasto-plasticity, constitutive modelling, thermodynamics and incompatibility-governed descriptions of solids.</p>
+            <span class="card-link">Explore topic →</span>
+          </a>
+          <a class="research-card" href="disloctheory2.html">
+            <span class="card-index">B</span>
+            <h3>Defects &amp; Dislocations</h3>
+            <p>Geometric and analytical descriptions of crystalline defects, variational evolution, currents and topological singularities.</p>
+            <span class="card-link">Explore topic →</span>
+          </a>
+          <a class="research-card" href="fracturedamage2.html">
+            <span class="card-index">C</span>
+            <h3>Fracture &amp; Damage</h3>
+            <p>Crack initiation and propagation through topological derivatives, level-set methods and hydro-mechanical models.</p>
+            <span class="card-link">Explore topic →</span>
+          </a>
+          <a class="research-card" href="calcvar2.html">
+            <span class="card-index">D</span>
+            <h3>Calculus of Variations &amp; PDEs</h3>
+            <p>Γ-convergence, relaxation, homogenization, BD and BV, free-discontinuity problems and gradient-free models.</p>
+            <span class="card-link">Explore topic →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="current" class="wrap section">
+      <div class="section-heading"><span>03</span><h2>Current research</h2></div>
+      <div class="current-grid">
+        <article class="current-card featured">
+          <p class="kicker">Primary programme</p>
+          <h3>Incompatibility-governed elasto-plasticity</h3>
+          <p>Developing a small-strain theory in which incompatibility is placed at the heart of plastic deformation, rather than treated only as a derived consequence of a plastic strain field.</p>
+        </article>
+        <article class="current-card">
+          <p class="kicker">Analysis &amp; numerics</p>
+          <h3>Second-gradient models</h3>
+          <p>Studying higher-order incompatible elasticity and elasto-plasticity, together with finite-element discretizations adapted to the incompatibility operator.</p>
+        </article>
+        <article class="current-card">
+          <p class="kicker">Variational structures</p>
+          <h3>BD, rigidity and homogenization</h3>
+          <p>Investigating rigidity, blow-up arguments, integral representation and homogenization in spaces of bounded deformation and under differential constraints.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section band">
+      <div class="wrap">
+        <div class="section-heading"><span>04</span><h2>Selected works</h2></div>
+        <div class="publication-list">
+          <article class="publication"><div class="year">2026</div><div><h3>Rigidity and Functional Properties of BD<sub>dev</sub>(Ω)</h3><p>M. Caroccia, N. Van Goethem · <em>Archive for Rational Mechanics and Analysis</em></p></div></article>
+          <article class="publication"><div class="year">2025</div><div><h3>Iterative blow-ups for maps with bounded 𝒜-variation</h3><p>M. Caroccia, N. Van Goethem · <em>Advances in Calculus of Variations</em></p></div></article>
+          <article class="publication"><div class="year">2024</div><div><h3>A new approach to topological singularities via a weak notion of Jacobian</h3><p>L. De Luca, R. Scala, N. Van Goethem · <em>Indiana University Mathematics Journal</em></p></div></article>
+          <article class="publication"><div class="year">2024</div><div><h3>A second-order model of small-strain incompatible elasticity</h3><p>S. Amstutz, N. Van Goethem · <em>Mathematics and Mechanics of Solids</em></p></div></article>
+          <article class="publication"><div class="year">2020</div><div><h3>On integral representation of local energy functionals on BD</h3><p>M. Caroccia, M. Focardi, N. Van Goethem · <em>SIAM Journal on Mathematical Analysis</em></p></div></article>
+          <article class="publication"><div class="year">2019</div><div><h3>Variational Evolution of Dislocations in Single Crystals</h3><p>R. Scala, N. Van Goethem · <em>Journal of Nonlinear Science</em></p></div></article>
+          <article class="publication"><div class="year">2019</div><div><h3>Hydro-Mechanical Fracture Modelling Governed by Topological Derivatives</h3><p>M. Xavier, N. Van Goethem, A. Novotny · <em>Computer Methods in Applied Mechanics and Engineering</em></p></div></article>
+          <article class="publication"><div class="year">2016</div><div><h3>Analysis of the incompatibility operator and application in intrinsic elasticity</h3><p>S. Amstutz, N. Van Goethem · <em>SIAM Journal on Mathematical Analysis</em></p></div></article>
+        </div>
+        <div class="section-actions"><a class="button" href="assets/CV.pdf">Complete publication list in CV</a></div>
+      </div>
+    </section>
+
+    <section id="teaching" class="wrap section">
+      <div class="section-heading"><span>05</span><h2>Teaching</h2></div>
+      <div class="teaching-list">
+        <div class="course"><h3>Calculus II</h3><span>Undergraduate</span></div>
+        <div class="course"><h3>Calculus III</h3><span>Undergraduate</span></div>
+        <div class="course"><h3>Differential Geometry</h3><span>Undergraduate</span></div>
+        <div class="course"><h3>Integral and Measure Theory</h3><a href="assets/measure_theory.pdf">Lecture notes (PDF) →</a></div>
+        <div class="course"><h3>Mathematical Methods in Physics</h3><span>Undergraduate</span></div>
+        <div class="course"><h3>Rational Mechanics</h3><span>Undergraduate</span></div>
+        <div class="course"><h3>Computational Methods in Geology</h3><span>Undergraduate</span></div>
+      </div>
+    </section>
+
+    <section id="service" class="section band">
+      <div class="wrap">
+        <div class="section-heading"><span>06</span><h2>Professional activities</h2></div>
+        <div class="service-grid">
+          <div><h3>Academic service</h3><ul><li>Member of the Scientific Council of the Faculty of Sciences</li><li>Member of the Strategic Board of CEMSUL</li><li>Former Vice-President of the Department of Mathematics (2022–2023)</li></ul></div>
+          <div><h3>Scientific community</h3><ul><li>Organizer of the DCM Mathematical Colloquia</li><li>Scientific seminar activities at FCUL</li><li>Referee for leading journals in analysis, mechanics and computation</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fracture wrap" aria-hidden="true">
+      <svg viewBox="0 0 800 14" preserveAspectRatio="none"><path d="M0,7 L120,7 L140,2 L160,11 L180,7 L340,7 L360,3 L380,10 L400,7 L620,7 L640,2 L660,11 L680,7 L800,7"/></svg>
+    </div>
+
+    <footer id="contact" class="wrap footer">
+      <div class="section-heading"><span>07</span><h2>Contact</h2></div>
+      <div class="contact-grid">
+        <div><h3>Address</h3><p>Department of Mathematical Sciences<br>Faculty of Sciences, University of Lisbon<br>Campo Grande, Edifício C6<br>1749-016 Lisboa, Portugal</p></div>
+        <div><h3>Profiles</h3><p><a href="mailto:nvgoethem@ciencias.ulisboa.pt">nvgoethem@ciencias.ulisboa.pt</a><br><a href="https://orcid.org/0000-0002-5356-8383">ORCID</a> · <a href="https://scholar.google.com/citations?user=DfveRtkAAAAJ&hl=fr">Google Scholar</a><br><a href="https://www.scopus.com/authid/detail.uri?authorId=36509173100">Scopus</a> · <a href="https://www.researchgate.net/profile/Nicolas-Van-Goethem">ResearchGate</a></p></div>
+      </div>
+      <p class="copyright">© 2026 Nicolas Van Goethem</p>
+    </footer>
+  </main>
+</body>
+</html>
