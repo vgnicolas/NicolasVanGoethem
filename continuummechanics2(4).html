@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuum Mechanics - Detailed Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: #284f78;
+      --border: #d9dee5;
+      --muted: #667085;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e8e8e8;
+        --accent: #79a8d8;
+        --border: #333;
+        --muted: #aaa;
+      }
+    }
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      font-family: "Crimson Text", serif;
+      color: var(--text);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: 2rem; font-weight: 600; }
+    h2 { font-size: 1.6rem; font-weight: 600; margin-top: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    p { margin-bottom: 1.2rem; }
+.pub {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub strong { font-size: 1.05em; display: block; margin-bottom: 0.3rem; }
+    .pub em { color: var(--muted); font-style: italic; }
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .pub {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid var(--accent); /* Blue separator line */
+    padding-top: 1rem; /* Add padding to separate the line from the content */
+     line-height: 1.15;
+}
+    .publication-group {
+  margin-top: 2.2rem;
+}
+
+.publication-group h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+}
+    
+    .back-button:hover { text-decoration: underline; }
+    .related-cards {
+      margin-top: 3rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+    .related-cards h3 {
+      font-family: "Crimson Text", serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    .related-cards a {
+      color: var(--accent);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .related-cards a:hover { text-decoration: underline; }
+    .page-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.65rem;
+      align-items: center;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .page-nav a:hover { text-decoration: underline; }
+
+  </style>
+</head>
+<body>
+   <nav class="page-nav">
+  <a href="index.html#research">← Research Overview</a>
+  <span>|</span>
+  <a href="continuummechanics2.html">Continuum Mechanics</a>
+  <span>|</span>
+  <a href="disloctheory2.html">Defects</a>
+  <span>|</span>
+  <a href="fracturedamage2.html">Fracture</a>
+  <span>|</span>
+  <a href="calcvar2.html">Calculus of Variations</a>
+</nav>
+  <h1>Continuum Mechanics of Defective Solids</h1>
+
+  <p>
+    My research develops mathematically rigorous models for solids with defects by combining continuum mechanics,
+    variational methods, partial differential equations and numerical approximation. The long-term objective is to
+    establish incompatibility-based formulations capable of bridging microscopic defect physics with macroscopic
+    constitutive theories of elasticity, plasticity and fracture.
+  </p>
+    <h2>Incompatibility, Dislocations and Plasticity</h2>
+  <p>
+    A key contribution, developed in collaboration with S. Amstutz (University of Avignon), is the development of <strong>incompatibility-governed models</strong> for elasticity 
+    and <strong>elasto-plasticity</strong>, where incompatibility naturally links dislocation densities to elastic and plastic strain fields.
+  </p>
+
+  <p>
+    A small-strain formulation based on incompatibility as the primary kinematic descriptor of plastic deformation.
+  </p>
+
+  <p>
+    These developments culminate in   <em>A second-order model of small-strain incompatible elasticity</em>, which introduces the current mathematical framework together with preliminary numerical simulations, 
+    and in our recent manuscript <em>Incompatibility-governed deformations: towards a new model of small-strain elastoplasticity</em>, written in collaboration with Thien-Nga Lê (École Polytechnique, France), where the theory is extended to elasto-plasticity.
+     <br> The idea of considering the incompatibility operator in plasticity goes back to the pioneering works of Ekkehart Kröner, whose work is acknowledged in the fields of theoretical physics and the geometrical 
+    theory of defects in solids.</p>
+
+  <p>The origins of this research can be traced back to my PhD work on crystal growth under the supervision of François Dupret at the Université catholique de Louvain, where a global model
+    for crystal growth, with particular emphasis on the Czochralski method, was developed.
+    One fundamental challenge raised by this model was the proper definition of the physical fields, particularly with regard to the principle of objectivity. Since the crystal is continuously grown from the melt, there is no natural undeformed, stress-free reference configuration, unlike in classical continuum mechanics. This led us to formulate the theory directly in terms of the strain tensor and its derivatives, rather 
+    than displacement or velocity fields, an idea that later evolved into the distributional approach to dislocations and, more recently, incompatibility-based models of elasticity and elasto-plasticity.
+  </p>
+
+  <p>
+    One paper illustrating our research on crystal growth is
+    <em>Dynamic Prediction of Point Defects in Czochralski Silicon Growth:
+    An Attempt to Reconcile Experimental Defect Diffusion Coefficients with the V/G Criterion</em>.
+  </p>
+
+  <h2>Incompatibility and Elasticity</h2>
+  <p>
+In <strong>elasticity</strong>, my research investigates how the presence of crystalline defects modifies the classical theory of elasticity. Building on Kröner's theory of strain incompatibility, I have developed intrinsic formulations in which the elastic strain, rather than the displacement field, becomes the primary kinematic variable. This provides a natural framework for describing solids containing dislocations and other lattice defects.
+  </p>
+
+  <p>
+Following the pioneering work of Philippe Ciarlet on intrinsic elasticity, I established several mathematical links between incompatibility, the Frank tensor and the continuum description of dislocations. These ideas led to new analytical results on the incompatibility operator and the Beltrami decomposition, including a compatible–incompatible decomposition of symmetric tensor fields and existence results for intrinsic models of incompatible elasticity. Together, these contributions provide a rigorous mathematical foundation for incompatibility-based elasticity.
+  </p>
+
+  <p>
+More fundamentally, incompatibility is the linearization of the Riemann curvature tensor, while dislocations are associated with torsion. Their interaction therefore naturally belongs to the framework of non-Riemannian differential geometry, a subject explored in several of my works, including The Non-Riemannian Dislocated Crystal: A Tribute to Ekkehart Kröner. The origins of this line of research date back to my PhD work, although several of the resulting publications appeared only later.
+  </p>
+
+  <p>
+    Analysis, finite-element approximation, and numerical simulation of second-gradient incompatible elasticity
+    and elasto-plasticity, with discretizations tailored to the incompatibility operator and benchmarking against
+    classical formulations.
+  </p>
+
+  <p>
+    Current developments rely on finite-element discretizations derived from differential complexes and compatible
+    with the structure of the incompatibility operator. Numerical simulations investigate size effects, strain
+    localization, dislocation-driven deformation and benchmark problems against established elastoplastic models.
+  </p>
+
+<h2>Functional Spaces in Elasticity and Elastoplasticity</h2>
+  <p>
+  In the context of <strong>plasticity</strong>, my recent work on <strong>BD<sub>dev</sub>(Ω)</strong> (fields of bounded deviatoric deformation),
+  in collaboration with M. Caroccia (University of Florence),
+  explores the mathematical properties of deviatoric strain in modeling plastic deformations. The paper
+  <em>Rigidity and Functional Properties of BD<sub>dev</sub>(Ω)</em> (<em>Archive for Rational Mechanics and Analysis</em>, 2026)
+  investigates the functional framework for deviatoric strain fields, highlighting their role in capturing the essential features of plastic behavior
+  while excluding volumetric changes. This work provides a rigorous foundation for understanding how deviatoric strain contributes to
+  the development of consistent models in plasticity theory.
+  </p>
+  In the context of <strong>elasticity</strong>, the paper <em>On Integral Representation of Local Energy Functionals on BD</em>, published in the <em>SIAM Journal on Mathematical Analysis</em> 
+  and co-authored with M. Caroccia and M. Focardi (University of Florence), provides a framework for addressing homogenization problems through integral representation techniques. 
+  The notion of rigidity, central in the aforementioned work, also plays a fundamental role in this context.
+
+   
+</p>
+
+  <h2>Selected Publications</h2>
+
+<section class="publication-group">
+  <h3>Current Work</h3>
+
+  <div class="pub">
+    <strong>
+      Incompatibility-governed deformations:
+      towards a new model of small-strain elastoplasticity
+    </strong>
+    S. Amstutz, T.-N. Lê, N. Van Goethem<br>
+    <em>Manuscript, 2026</em><br>
+    <span class="status">Submitted</span>
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Recent Papers</h3>
+
+  <div class="pub">
+    <strong>Rigidity and Functional Properties of BD<sub>dev</sub>(Ω)</strong>
+    M. Caroccia, N. Van Goethem<br>
+    <em>Arch. Rational Mech. Anal.</em>, 2026
+  </div>
+
+  <div class="pub">
+    <strong>A second-order model of small-strain incompatible elasticity</strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Math. Mech. Solids</em>, 2024
+  </div>
+
+  <div class="pub">
+    <strong>Is Objectivity Really an Objective Concept?</strong>
+    N. Van Goethem<br>
+    <em>Ann. Appl. Math.</em>, 2022
+  </div>
+
+  <div class="pub">
+    <strong>On integral representation of local energy functionals on BD</strong>
+    M. Caroccia, M. Focardi, N. Van Goethem<br>
+    <em>SIAM J. Math. Anal.</em>, 2020
+  </div>
+
+  <div class="pub">
+    <strong>
+      Existence and asymptotic results for an intrinsic model
+      of incompatible small-strain elasticity
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Discrete Contin. Dyn. Syst. B</em>, 2020
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Foundational Papers on Incompatibility</h3>
+
+  <div class="pub">
+    <strong>
+      The incompatibility operator: from Riemann's intrinsic view
+      of geometry to a new model of elasto-plasticity
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Topics in Applied Analysis and Optimization</em>,
+    CIM Series in Mathematical Sciences, Springer, 2019
+  </div>
+
+  <div class="pub">
+    <strong>
+      Incompatibility-governed elasto-plasticity
+      for continua with dislocations
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>Proc. R. Soc. A</em>, 2017
+  </div>
+
+  <div class="pub">
+    <strong>
+      Analysis of the incompatibility operator and application
+      in intrinsic elasticity with dislocations
+    </strong>
+    S. Amstutz, N. Van Goethem<br>
+    <em>SIAM J. Math. Anal.</em>, 2016
+  </div>
+
+  <div class="pub">
+    <strong>
+      A compatible-incompatible decomposition of symmetric tensors
+      in L<sup>p</sup> with application to elasticity
+    </strong>
+    G. Maggiani, R. Scala, N. Van Goethem<br>
+    <em>Math. Methods Appl. Sci.</em>, 2015
+  </div>
+
+  <div class="pub">
+    <strong>
+      Strain incompatibility in single crystals:
+      Kröner's formula revisited
+    </strong>
+    N. Van Goethem<br>
+    <em>J. Elast.</em>, 2011
+  </div>
+</section>
+
+<section class="publication-group">
+  <h3>Earlier Contributions</h3>
+
+  <div class="pub">
+    <strong>Thermodynamical forces in single crystals with dislocations</strong>
+    N. Van Goethem<br>
+    <em>Z. Angew. Math. Phys.</em>, 2014
+  </div>
+
+  <div class="pub">
+    <strong>Cauchy elasticity with dislocations in the small-strain assumption</strong>
+    N. Van Goethem<br>
+    <em>Appl. Math. Lett.</em>, 2015
+  </div>
+
+  <div class="pub">
+    <strong>A distributional approach to 2D Volterra dislocations at the continuum scale</strong>
+    F. Dupret, N. Van Goethem<br>
+    <em>European J. Appl. Math.</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>
+      A multiscale model for dislocations:
+      from mesoscopic elasticity to macroscopic plasticity
+    </strong>
+    N. Van Goethem<br>
+    <em>Z. Angew. Math. Mech.</em>, 2012
+  </div>
+
+  <div class="pub">
+    <strong>
+      The non-Riemannian dislocated crystal:
+      a tribute to Ekkehart Kröner
+    </strong>
+    N. Van Goethem<br>
+    <em>J. Geom. Mech.</em>, 2010
+  </div>
+
+  <div class="pub">
+    <strong>
+      Dynamic Prediction of Point Defects in Czochralski Silicon Growth:
+      An Attempt to Reconcile Experimental Defect Diffusion Coefficients
+      with the V/G Criterion
+    </strong>
+    N. Van Goethem, A. de Potter, N. Van den Bogaert, F. Dupret<br>
+    <em>J. Phys. Chem. Solids</em>, 2008
+  </div>
+</section>
+
+ <nav class="page-nav">
+  <a href="index.html#research">← Research Overview</a>
+  <span>|</span>
+  <a href="continuummechanics2.html">Continuum Mechanics</a>
+  <span>|</span>
+  <a href="disloctheory2.html">Defects</a>
+  <span>|</span>
+  <a href="fracturedamage2.html">Fracture</a>
+  <span>|</span>
+  <a href="calcvar2.html">Calculus of Variations</a>
+</nav>
+</body>
+</html>
