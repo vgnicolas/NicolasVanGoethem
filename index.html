@@ -304,19 +304,29 @@ https://www.researchgate.net/profile/Nicolas-Van-Goethem
         .contact a:hover {
             text-decoration: underline;
         }
-.teaching-list li{
-    margin-bottom:0.9rem;
+.teaching-list {
+    list-style: disc;
+    padding-left: 1.5rem;
 }
 
-.teaching-list a{
-    margin-left:0.8rem;
-    color:var(--accent);
-    font-size:0.92rem;
-    text-decoration:none;
+.teaching-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
 }
 
-.teaching-list a:hover{
-    text-decoration:underline;
+.teaching-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.teaching-list a:hover {
+    text-decoration: underline;
 }
         /* Footer */
         footer {
