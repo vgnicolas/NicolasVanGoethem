@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Defects, Dislocations and Topological Singularities - Detailed Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: #284f78;
+      --border: #d9dee5;
+      --muted: #667085;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e8e8e8;
+        --accent: #79a8d8;
+        --border: #333;
+        --muted: #aaa;
+      }
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      font-family: "Crimson Text", serif;
+      color: var(--text);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    .page-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.65rem;
+      align-items: center;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .page-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .publication-group {
+      margin-top: 2.2rem;
+    }
+
+    .publication-group h3 {
+      font-family: "Crimson Text", serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 1rem;
+    }
+
+    .pub {
+      margin-bottom: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-top: 1px solid var(--accent);
+      line-height: 1.15;
+    }
+
+    .pub strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 1.05em;
+    }
+
+    .pub .authors {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .pub em {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .related-cards {
+      margin-top: 3rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    .related-cards h3 {
+      font-family: "Crimson Text", serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .related-cards a {
+      color: var(--accent);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .related-cards a:hover {
+      text-decoration: underline;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back-button:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="page-nav">
+    <a href="index.html#research">← Research Overview</a>
+    <span>|</span>
+    <a href="continuummechanics2.html">Continuum Mechanics</a>
+    <span>|</span>
+    <a href="disloctheory2.html">Defects</a>
+    <span>|</span>
+    <a href="fracturedamage2.html">Fracture</a>
+    <span>|</span>
+    <a href="calcvar2.html">Calculus of Variations</a>
+  </nav>
+
+  <h1>Defects, Dislocations and Topological Singularities</h1>
+
+  <p>
+    This research programme combines continuum mechanics, geometric measure theory, partial differential equations
+    and the calculus of variations to describe crystalline defects across several length scales.
+  </p>
+
+  <h2>A Distributional Approach to Dislocations</h2>
+
+  <p>
+    Classical smooth displacement fields cannot globally represent a crystal containing dislocations.
+    The distributional formulation avoids artificial branch cuts and describes Burgers vectors and dislocation
+    densities through intrinsic singular measures and differential operators.
+  </p>
+
+  <p>
+    This perspective provides a bridge between isolated defects, intrinsic elasticity, the incompatibility operator
+    and continuum theories with distributed dislocation densities.
+  </p>
+
+  <h2>Currents, Dislocation Lines and Variational Evolution</h2>
+
+  <p>
+    In three dimensions, dislocations are curved oriented line defects. Cartesian currents retain orientation,
+    multiplicity and boundary information while allowing weak convergence and singular limits.
+  </p>
+
+  <p>
+    With R. Scala, I developed variational and quasistatic evolution models based on incremental minimization,
+    balancing stored elastic energy with the cost of moving dislocations while preserving their geometric structure
+    and conservation laws.
+  </p>
+
+  <h2>Jacobians and Topological Singularities</h2>
+
+  <p>
+    With L. De Luca and R. Scala, I introduced a weak notion of Jacobian for BV maps. It captures topological
+    singularities in discontinuous fields through distributional derivatives, currents and geometric measure theory.
+  </p>
+
+  <h2>Geometry, Incompatibility and Defective Crystals</h2>
+
+  <p>
+    Dislocations are associated with torsion, while strain incompatibility is related to linearized curvature.
+    This geometric viewpoint leads to intrinsic formulations of elasticity, the Frank tensor, Kröner’s formula
+    and compatible–incompatible decompositions.
+  </p>
+
+  <h2>From Discrete Defects to Continuum Plasticity</h2>
+
+  <p>
+    A long-term objective is to derive effective continuum theories from large systems of interacting dislocations
+    by combining compactness, relaxation, Γ-convergence and homogenization with the geometric constraints carried
+    by dislocation currents.
+  </p>
+
+  <h2>Selected Publications</h2>
+
+  <section class="publication-group">
+    <h3>Topological Singularities and Weak Jacobians</h3>
+
+    <div class="pub">
+      <strong>A new approach to topological singularities via a weak notion of Jacobian for functions of bounded variation</strong>
+      <span class="authors">L. De Luca, R. Scala, N. Van Goethem</span>
+      <em>Indiana University Mathematics Journal</em>, 2024
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Variational Models of Dislocation Networks</h3>
+
+    <div class="pub">
+      <strong>Variational evolution of dislocations in single crystals</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>Journal of Nonlinear Science</em>, 2019
+    </div>
+
+    <div class="pub">
+      <strong>A variational approach to single crystals with dislocations</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>SIAM Journal on Mathematical Analysis</em>, 2019
+    </div>
+
+    <div class="pub">
+      <strong>Currents and dislocations at the continuum scale</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>Methods and Applications of Analysis</em>, 2016
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Incompatibility and Intrinsic Elasticity</h3>
+
+    <div class="pub">
+      <strong>Incompatibility-governed singularities in linear elasticity with dislocations</strong>
+      <span class="authors">N. Van Goethem</span>
+      <em>Mathematics and Mechanics of Solids</em>, 2017
+    </div>
+
+    <div class="pub">
+      <strong>The Frank tensor as a boundary condition in intrinsic linearized elasticity</strong>
+      <span class="authors">N. Van Goethem</span>
+      <em>Journal of Geometric Mechanics</em>, 2016
+    </div>
+
+    <div class="pub">
+      <strong>Strain incompatibility in single crystals: Kröner’s formula revisited</strong>
+      <span class="authors">N. Van Goethem</span>
+      <em>Journal of Elasticity</em>, 2011
+    </div>
+  </section>
+
+  <div class="related-cards">
+    <h3>Related Research Areas</h3>
+    <a href="continuummechanics2.html">→ Continuum Mechanics</a>
+    <a href="fracturedamage2.html">→ Fracture &amp; Damage</a>
+    <a href="calcvar2.html">→ Calculus of Variations &amp; PDEs</a>
+  </div>
+
+  <a class="back-button" href="index.html#research">← Back to Research Overview</a>
+</body>
+</html>
