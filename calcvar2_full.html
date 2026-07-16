@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculus of Variations, PDEs and Geometric Analysis - Detailed Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: #284f78;
+      --border: #d9dee5;
+      --muted: #667085;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e8e8e8;
+        --accent: #79a8d8;
+        --border: #333;
+        --muted: #aaa;
+      }
+    }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--text);
+      background: var(--bg);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: "Crimson Text", serif;
+    }
+
+    h1 {
+      margin: 1.5rem 0 1rem;
+      color: var(--text);
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    p { margin: 0 0 1.2rem; }
+
+    .page-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.65rem;
+      align-items: center;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .page-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .publication-group { margin-top: 2.2rem; }
+
+    .publication-group h3 {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .pub {
+      margin-bottom: 1.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--accent);
+      line-height: 1.3;
+    }
+
+    .pub strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 1.05em;
+    }
+
+    .pub .authors {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .pub em {
+      color: var(--muted);
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="page-nav">
+    <a href="index.html#research">← Research Overview</a>
+    <span>|</span>
+    <a href="continuummechanics2.html">Continuum Mechanics</a>
+    <span>|</span>
+    <a href="disloctheory2.html">Defects</a>
+    <span>|</span>
+    <a href="fracturedamage2.html">Fracture</a>
+    <span>|</span>
+    <a href="calcvar2.html">Calculus of Variations</a>
+  </nav>
+
+<h1>Calculus of Variations, Partial Differential Equations and Geometric Analysis</h1>
+
+  <p>
+    My research in the <strong>calculus of variations</strong> develops analytical and
+    geometric methods for nonlinear partial differential equations arising in continuum
+    mechanics, defect theory, image processing and shape optimization. Combining functional
+    analysis, geometric measure theory and variational function spaces for continuum mechanics, I investigate the structure of some variational models arising in material science, their asymptotic
+    behaviour and the singular phenomena they describe.
+  </p>
+
+  <p>
+    A common theme is the passage from local or microscopic structures to effective
+    continuum descriptions. This includes the analysis of singular measures, differential
+    constraints, free boundaries, topological defects and heterogeneous materials through
+    tools such as rigidity, blow-up methods, integral representation, relaxation,
+    Γ-convergence and homogenization.
+  </p>
+
+  <h2>Functional Spaces, Rigidity and Variational Analysis</h2>
+
+  <p>
+    A major part of my research concerns function spaces that arise naturally in the
+    calculus of variations and continuum mechanics, including <strong>BV</strong>,
+    <strong>BD</strong>, <strong>BD<sub>dev</sub></strong> and, more generally, spaces of
+    bounded <strong>𝒜-variation</strong>. These spaces provide a natural framework for
+    describing discontinuities, singular measures and irreversible deformations while
+    retaining the differential structure of the underlying physical models.
+  </p>
+
+  <p>
+    In recent work with M. Caroccia, I have investigated
+    <strong>BD<sub>dev</sub>(Ω)</strong>, where only the deviatoric part of the symmetric
+    gradient is controlled. This space is closely connected with perfect plasticity and
+    incompressible deformation. Our work establishes rigidity results and functional
+    properties that clarify the global structure of fields satisfying this weaker
+    differential constraint.
+  </p>
+
+  <p>
+    Rigidity is also central to my work on blow-up analysis. Refined iterative blow-up
+    methods for maps with bounded 𝒜-variation provide local descriptions of singularities
+    and extend classical arguments from BV and BD to a wider class of differential
+    operators. These techniques help identify the geometric form of singular measures and
+    the local behaviour of variational energies near concentration sets.
+  </p>
+
+  <p>
+    Another important direction concerns the <strong>integral representation</strong> of
+    variational functionals. In many continuum models, the energy is initially defined only
+    as an abstract functional on an admissible class. An integral representation theorem
+    identifies the local densities that generate this energy and shows how it decomposes
+    into bulk and singular contributions. Such results are essential for relaxation,
+    lower semicontinuity and homogenization because they reveal the precise local structure
+    of the effective energy. In collaboration with M. Caroccia and M. Focardi, I established
+    integral representation results for local energy functionals on BD.
+  </p>
+
+  <p>
+    These developments are closely connected with the theory of
+    <strong>𝒜-free measures</strong>, namely measures satisfying a linear differential
+    constraint of the form 𝒜μ = 0. This viewpoint encompasses familiar conditions such as
+    divergence-free and curl-free fields and provides a unified framework for studying
+    oscillation, concentration and singularity formation in variational problems.
+  </p>
+
+  <h2>Γ-Convergence, Relaxation and Homogenization</h2>
+
+  <p>
+    A significant part of my research is devoted to the variational analysis of nonlinear
+    problems through <strong>Γ-convergence</strong>, <strong>relaxation</strong>,
+    <strong>lower semicontinuity</strong> and <strong>homogenization</strong>. These tools
+    provide the mathematical foundation for deriving effective continuum models, studying
+    singular limits and understanding how microscopic structures influence macroscopic
+    behaviour.
+  </p>
+
+  <p>
+    Lower semicontinuity provides the basic existence criterion for minimizers, while
+    relaxation constructs the appropriate generalized energy when minimizing sequences
+    develop oscillations, concentrations or singularities. Homogenization derives effective
+    macroscopic laws for heterogeneous media, and Γ-convergence supplies the natural notion
+    of convergence for the associated minimization problems.
+  </p>
+
+  <p>
+    These methods recur throughout my work in elasticity, plasticity, topology optimization
+    and fracture, where they provide rigorous justification for reduced, relaxed and
+    effective theories.
+  </p>
+
+  <h2>Topological Singularities, Currents and Defect Theory</h2>
+
+  <p>
+    Another direction of my research concerns the variational description of
+    <strong>topological singularities</strong> through geometric measure theory. The
+    objective is to represent singular defects in a form that preserves both their geometric
+    structure and their compatibility with continuum and variational models.
+  </p>
+
+  <p>
+    This line of research is closely linked to my earlier
+    <strong>distributional approach to dislocations</strong>, in which defects are described
+    through distributions rather than smooth classical fields. That formulation made it
+    possible to represent dislocations directly at the continuum scale and provided one of
+    the conceptual foundations for my later work on incompatibility-based elasticity and
+    elasto-plasticity.
+  </p>
+
+  <p>
+    Building on these ideas, I have used <strong>currents</strong>,
+    <strong>Jacobians</strong> and functions of <strong>bounded variation</strong> to study
+    singular maps and defect structures. In collaboration with L. De Luca and R. Scala, the
+    paper <em>A new approach to Topological Singularities via a Weak Notion of Jacobian for
+    Functions of Bounded Variation</em> extends the Jacobian to singular BV maps and provides
+    a variational framework for describing topological defects. This opens a route toward
+    the analysis and homogenization of dislocation clusters and other singular structures
+    into effective continuum theories.
+  </p>
+
+  <h2>Gradient-Free Variational Models and Image Processing</h2>
+
+  <p>
+    A further direction concerns <strong>gradient-free variational models</strong> for
+    free-boundary problems in topology optimization and image processing. In collaboration
+    with S. Amstutz and A. A. Novotny, I developed perimeter approximations that avoid explicit
+    gradient regularization while preserving the essential variational structure of the
+    problem.
+  </p>
+
+  <p>
+    These models were first introduced for topology optimization, where they provide an
+    efficient framework for optimizing material distributions without explicitly tracking
+    interfaces. The same ideas were later extended to image segmentation and classification,
+    where variational principles determine the partition of an image into regions rather
+    than relying solely on local edge detection.
+  </p>
+
+  <p>
+    This work illustrates how methods from the calculus of variations can be transferred
+    between mechanics, optimization and computer vision, combining rigorous analysis with
+    computationally effective models.
+  </p>
+
+  <h2>Current Research</h2>
+
+  <p>
+   Current research combines variational analysis, geometric measure theory, function spaces arising in the calculus of variations and continuum mechanics, and modern computational methods. Particular emphasis is placed on higher-order continuum models, differential constraints, weak Jacobians, homogenization of defect structures, and structure-preserving finite element discretizations derived from differential complexes. The long-term objective is to bridge microscopic singular structures and mathematically rigorous, computationally predictive continuum theories.
+  </p>
+
+  <h2>Selected Publications</h2>
+
+  <section class="publication-group">
+    <h3>Recent Papers</h3>
+
+    <div class="pub">
+      <strong>Rigidity and Functional Properties of BD<sub>dev</sub>(Ω)</strong>
+      <span class="authors">M. Caroccia, N. Van Goethem</span>
+      <em>Archive for Rational Mechanics and Analysis</em>, 2026
+    </div>
+
+    <div class="pub">
+      <strong>Iterative blow-ups for maps with bounded 𝒜-variation: a refinement, with application to BD and BV</strong>
+      <span class="authors">M. Caroccia, N. Van Goethem</span>
+      <em>Advances in Calculus of Variations</em>, 2025
+    </div>
+
+    <div class="pub">
+      <strong>A new approach to topological singularities via a weak notion of Jacobian for functions of bounded variation</strong>
+      <span class="authors">L. De Luca, R. Scala, N. Van Goethem</span>
+      <em>Indiana University Mathematics Journal</em>, 2024
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Variational Foundations</h3>
+
+    <div class="pub">
+      <strong>On integral representation of local energy functionals on BD</strong>
+      <span class="authors">M. Caroccia, M. Focardi, N. Van Goethem</span>
+      <em>SIAM Journal on Mathematical Analysis</em>, 2020
+    </div>
+
+    <div class="pub">
+      <strong>A compatible-incompatible decomposition of symmetric tensors in L<sup>p</sup> with application to elasticity</strong>
+      <span class="authors">G. Maggiani, R. Scala, N. Van Goethem</span>
+      <em>Mathematical Methods in the Applied Sciences</em>, 2015
+    </div>
+
+    <div class="pub">
+      <strong>Topological sensitivity analysis for elliptic differential operators of order 2m</strong>
+      <span class="authors">S. Amstutz, A. A. Novotny, N. Van Goethem</span>
+      <em>Journal of Differential Equations</em>, 2014
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Topological Singularities and Defects</h3>
+
+    <div class="pub">
+      <strong>A variational approach to single crystals with dislocations</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>SIAM Journal on Mathematical Analysis</em>, 2019
+    </div>
+
+    <div class="pub">
+      <strong>Variational evolution of dislocations in single crystals</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>Journal of Nonlinear Science</em>, 2019
+    </div>
+
+    <div class="pub">
+      <strong>Currents and dislocations at the continuum scale</strong>
+      <span class="authors">R. Scala, N. Van Goethem</span>
+      <em>Methods and Applications of Analysis</em>, 2016
+    </div>
+
+    <div class="pub">
+      <strong>A distributional approach to 2D Volterra dislocations at the continuum scale</strong>
+      <span class="authors">F. Dupret, N. Van Goethem</span>
+      <em>European Journal of Applied Mathematics</em>, 2012
+    </div>
+  </section>
+
+  <section class="publication-group">
+    <h3>Gradient-Free Models and Image Processing</h3>
+
+    <div class="pub">
+      <strong>Minimal partitions and image classification with a gradient-free perimeter approximation</strong>
+      <span class="authors">S. Amstutz, A. A. Novotny, N. Van Goethem</span>
+      <em>Inverse Problems and Imaging</em>, 2014
+    </div>
+
+    <div class="pub">
+      <strong>Topology optimization methods with gradient-free perimeter approximation</strong>
+      <span class="authors">S. Amstutz, N. Van Goethem</span>
+      <em>Interfaces and Free Boundaries</em>, 2012
+    </div>
+  </section>
+
+  <nav class="page-nav">
+    <a href="index.html#research">← Research Overview</a>
+    <span>|</span>
+    <a href="continuummechanics2.html">Continuum Mechanics</a>
+    <span>|</span>
+    <a href="disloctheory2.html">Defects</a>
+    <span>|</span>
+    <a href="fracturedamage2.html">Fracture</a>
+    <span>|</span>
+    <a href="calcvar2.html">Calculus of Variations</a>
+  </nav>
+
+</body>
+</html>
