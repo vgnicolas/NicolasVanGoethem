@@ -244,7 +244,7 @@
     <ul class="plain course-list">
       <li><span>Calculus II</span></li>
       <li><span>Calculus III</span></li>
-      <li><span>Differential Geometry</span><a id="differential-geometry-notes" href="Lecture_Notes_Geometria_v63.pdf" hidden>Lecture Notes (PDF)</a></li>
+      <li><span>Differential Geometry</span><a id="differential-geometry-notes" href="Lecture_Notes_Geometria_Diferencial.pdf" hidden>Lecture Notes (PDF)</a></li>
       <li><span>Integral and Measure Theory</span><a href="LectureNotes_Integral_e_Aplicações_2026.pdf">Lecture Notes (PDF)</a></li>
       <li><span>Mathematical Methods in Physics</span></li>
       <li><span>Rational Mechanics</span></li>
@@ -293,7 +293,7 @@
 
 <script>
   // Display the lecture-notes link only after the PDF has been uploaded to this repository.
-  fetch('Lecture_Notes_Geometria_v63.pdf', { method: 'HEAD', cache: 'no-store' })
+  fetch('Lecture_Notes_Geometria_Diferencial.pdf', { method: 'HEAD', cache: 'no-store' })
     .then(response => {
       if (response.ok && (response.headers.get('content-type') || '').toLowerCase().includes('pdf')) {
         document.getElementById('differential-geometry-notes').hidden = false;
