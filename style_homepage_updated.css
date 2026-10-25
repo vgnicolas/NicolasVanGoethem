@@ -200,6 +200,7 @@ section, footer { padding: 38px 0; border-top: 1px solid var(--line); }
   border-bottom: 1px solid var(--line);
 }
 .course-list a { font-size: .85rem; }
+.course-materials { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 6px 22px; }
 
 .contact-grid {
   display: grid;
@@ -231,5 +232,6 @@ section, footer { padding: 38px 0; border-top: 1px solid var(--line); }
   h1 { font-size: 3.35rem; }
   section, footer { padding: 34px 0; }
   .course-list li { flex-direction: column; gap: 4px; }
+  .course-materials { justify-content: flex-start; }
   .research-item { min-height: 0; }
 }
